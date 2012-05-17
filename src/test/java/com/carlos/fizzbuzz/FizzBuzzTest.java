@@ -63,4 +63,16 @@ public class FizzBuzzTest {
         assertThat("The result is incorrect", result, is("Buzz"));
     }
 
+    @Test
+    public void given_number_mulitple_of_5_when_fizzbuzz_write_then_Buzz_is_printed() {
+        //Given
+        Integer number = 25;
+
+        //When
+        String result = fizzbuzz.write(number);
+
+        //Then
+        assertThat("The result is incorrect", result, is("Buzz"));
+    }
+
 }

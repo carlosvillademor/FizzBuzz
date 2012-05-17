@@ -6,7 +6,7 @@ public class FizzBuzz {
         if (isMultipleOf3(number)) {
             return "Fizz";
         }
-        if (number == 5) {
+        if (number%5 == 0) {
             return "Buzz";
         }
         return number.toString();
