@@ -1,4 +1,4 @@
-package com.carlos.fizzbuzz;
+package com.carlos.fizzBuzz;
 
 public class FizzBuzz {
 
