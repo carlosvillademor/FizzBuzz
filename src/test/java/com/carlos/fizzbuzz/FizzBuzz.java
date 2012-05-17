@@ -3,13 +3,17 @@ package com.carlos.fizzbuzz;
 public class FizzBuzz {
 
     public String write(Integer number) {
+        String result = "";
         if (isMultipleOf(number, 3)) {
-            return "Fizz";
+            result += "Fizz";
         }
         if (isMultipleOf(number, 5)) {
-            return "Buzz";
+            result += "Buzz";
         }
-        return number.toString();
+        if ("".equals(result)) {
+            result += number.toString();
+        }
+        return result;
     }
 
     private boolean isMultipleOf(Integer number, Integer multipleOf) {

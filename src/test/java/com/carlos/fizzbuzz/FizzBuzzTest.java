@@ -64,7 +64,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void given_number_mulitple_of_5_when_fizzbuzz_write_then_Buzz_is_printed() {
+    public void given_number_multiple_of_5_when_fizzbuzz_write_then_Buzz_is_printed() {
         //Given
         Integer number = 25;
 
@@ -73,6 +73,18 @@ public class FizzBuzzTest {
 
         //Then
         assertThat("The result is incorrect", result, is("Buzz"));
+    }
+
+    @Test
+    public void given_number_multiple_of_3_and_5_when_fizzbuzz_write_then_FizzBuzz_is_printed() {
+        //Given
+        Integer number = 15;
+
+        //When
+        String result = fizzbuzz.write(number);
+
+        //Then
+        assertThat("The result is incorrect", result, is("FizzBuzz"));
     }
 
 }
