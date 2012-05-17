@@ -51,4 +51,16 @@ public class FizzBuzzTest {
         assertThat("The result is incorrect", result, is("Fizz"));
     }
 
+    @Test
+    public void given_number_5_when_fizzbuzz_write_then_Buzz_is_printed() {
+        //Given
+        Integer number = 5;
+
+        //When
+        String result = fizzbuzz.write(number);
+
+        //Then
+        assertThat("The result is incorrect", result, is("Buzz"));
+    }
+
 }

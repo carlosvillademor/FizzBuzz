@@ -6,6 +6,9 @@ public class FizzBuzz {
         if (isMultipleOf3(number)) {
             return "Fizz";
         }
+        if (number == 5) {
+            return "Buzz";
+        }
         return number.toString();
     }
 
