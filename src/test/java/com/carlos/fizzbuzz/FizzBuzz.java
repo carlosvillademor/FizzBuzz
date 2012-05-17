@@ -6,10 +6,14 @@ public class FizzBuzz {
         if (isMultipleOf3(number)) {
             return "Fizz";
         }
-        if (number%5 == 0) {
+        if (isMultipleOf5(number)) {
             return "Buzz";
         }
         return number.toString();
+    }
+
+    private boolean isMultipleOf5(Integer number) {
+        return number%5 == 0;
     }
 
     private boolean isMultipleOf3(Integer number) {
